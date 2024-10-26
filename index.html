@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="container">
+        <div class="box">
+            <div class="upper">
+                <div class="input">
+                    <i class="fa-solid fa-location-dot"></i>
+                    <input type="text" placeholder="Search" id="searching">
+                    <div class="icon" >
+
+                        <i class="fa-solid fa-magnifying-glass" id="searchbtn"></i>
+                    </div>
+                </div>
+                <div class="suggest" >
+                    <ul class="listing">
+                    </ul>
+                </div>
+            </div>
+            <div class="mid" id="midsection">
+                <div class="temp">
+                    <img src="./Images/sum.png" alt="" id="cityimg">
+                    <p class="temp_p" id="citytemp">11 <span>°C</span></p>
+                </div>
+                <div class="city">
+                    <p id="cityname">Lahore</p>
+                </div>
+            </div>
+            <div class="lower" id="lastsection">
+                <div class="wind">
+                    <i class="fa-solid fa-wind"></i>
+                    <div class="text">
+                        <div class="info_wind" >
+                            <!-- <span>0km/h</span> -->
+                            <p id="citywind">0<span>Km/h</span></p>
+                        </div>
+                        <p>Wind Speed</p>
+                    </div>
+                </div>
+                <div class="humidity">
+                    <i class="fa-solid fa-water"></i>
+                    <div class="text">
+                        <div class="info_humidity" >
+                            <!-- <span>0km/h</span> -->
+                            <p id="cityhumidity">0<span>Km/h</span></p>
+                        </div>
+                        <p>Humidity</p>
+                    </div>
+                </div>
+            </div>
+            <div class="hide" id="notfound">
+                <div class="temp">
+                    <img src="./Images/404.png" alt="" id="cityimg">
+                    <p class="temp_p_n">Not Found</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
